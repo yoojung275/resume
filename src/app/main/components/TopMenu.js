@@ -4,21 +4,23 @@ import { Header } from 'react-fullpage';
 import styled from 'styled-components';
 
 const StyledNav = styled.nav`
-  display: flex;
   width: 100%;
-  height: 55px;
   background: #fff;
   border-bottom: 1px solid #000;
-  a {
-    line-height: 49px;
-    padding: 0 30px;
-    font-size: 1.75rem;
-  }
-  @media all and (max-width: 460px) {
+  .layout-width {
+    display: flex;
+    height: 55px;
     a {
-      padding: 0 15px;
-      font-size: 1.65rem;
-      letter-spacing: -0.5px;
+      line-height: 50px;
+      padding: 0 30px;
+      font-size: 1.75rem;
+    }
+    @media all and (max-width: 460px) {
+      a {
+        padding: 0 15px;
+        font-size: 1.65rem;
+        letter-spacing: -0.5px;
+      }
     }
   }
 `;
@@ -27,9 +29,11 @@ const TopMenu = () => {
   return (
     <Header>
       <StyledNav>
-        <a href="#sectionOne">INFO & ABOUT</a>
-        <a href="#sectionTwo">EXPERIENCE</a>
-        <a href="#sectionThree">PORTFOLIO</a>
+        <div className="layout-width">
+          <a href="#sectionOne">INFO & ABOUT</a>
+          <a href="#sectionTwo">EXPERIENCE</a>
+          <a href="#sectionThree">PORTFOLIO</a>
+        </div>
       </StyledNav>
     </Header>
   );
