@@ -21,7 +21,7 @@ const Wrapper = styled.div`
     margin-left: 20px;
   }
 
-  @media all and(max-width: 650px) {
+  @media all and (max-width: 650px) {
     .item {
       width: 100%;
     }
@@ -30,6 +30,7 @@ const Wrapper = styled.div`
       margin-left: 0;
     }
   }
+}
 `;
 
 const Experience = () => {

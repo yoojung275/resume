@@ -91,6 +91,16 @@ const Wrapper = styled.div`
       background: #000;
       color: #fff;
     }
+
+    @media all and (max-width: 650px) {
+      .item {
+        width: 100%;
+      }
+
+      .item + .item {
+        margin-left: 0;
+      }
+    }
   }
 
   .tab-content {
@@ -115,7 +125,7 @@ const Portfolio = () => {
         <h2>PORTFOLIO</h2>
 
         <ul className="tab-group">
-        <li
+          <li
             onClick={() => onClick('tab1')}
             className={classNames({ on: tab === 'tab1' })}
           >
