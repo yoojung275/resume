@@ -17,6 +17,7 @@ const ProfileImage = ({ className }) => {
 const StyleProfileImage = styled(ProfileImage)`
   background: #bcbcbc url('/images/profile.png') no-repeat calc(50% + 318px)
     bottom;
+    
   height: 350px;
   padding: 50px 30px 10px;
   position: relative;

@@ -37,6 +37,7 @@ const Experience = () => {
   return (
     <Section>
       <Wrapper className="layout-width first">
+        <h2>EXPERIENCE</h2>
         <Item title="EDUCATION"></Item>
         <Item title="WORK EXPERIENCE"></Item>
       </Wrapper>

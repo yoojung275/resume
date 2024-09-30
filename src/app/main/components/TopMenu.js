@@ -15,7 +15,7 @@ const StyledNav = styled.nav`
       padding: 0 30px;
       font-size: 1.75rem;
     }
-    @media all and (max-width: 460px) {
+    @media all and (max-width: 620px) {
       a {
         padding: 0 15px;
         font-size: 1.65rem;

@@ -10,6 +10,10 @@ const Wrapper = styled.div`
     display: flex;
     flex-wrap: wrap;
 
+    .h2 {
+    
+    }
+
     .item {
       width: 0;
       flex-grow: 1;
@@ -39,6 +43,7 @@ const InfoAbout = () => {
       <Wrapper>
         <ProfileImage />
         <div className="layout-width inner">
+            <h2>자기소개</h2>
           <Item title="INFO"></Item>
           <Item title="ABOUT"></Item>
         </div>
