@@ -2,7 +2,7 @@ import React from 'react';
 import { Section } from 'react-fullpage';
 import styled from 'styled-components';
 import Item from './Item';
-import { SiApachetomcat, SiThymeleaf, SiSpring, SiSpringboot, SiSpringsecurity, SiPython, SiJavascript, SiReact, SiHtml5, SiCss3, SiGradle, SiGit, SiJenkins, SiDocker, SiAmazonaws, SiOracle, SiDbeaver } from 'react-icons/si';
+import { SiApachetomcat, SiThymeleaf, SiSpring, SiSpringboot, SiSpringsecurity, SiPython, SiJavascript, SiReact, SiHtml5, SiCss3, SiGradle, SiGit, SiJenkins, SiDocker, SiOracle, SiDbeaver } from 'react-icons/si';
 import { GrJava } from "react-icons/gr";
 import { FaAws } from "react-icons/fa";
 import { TbBrandReactNative, TbBrandNextjs } from "react-icons/tb";
