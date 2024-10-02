@@ -389,7 +389,8 @@ const Wrapper = styled.div`
   .content1 h3,
   .content2 h3,
   .content3 h3 {
-    margin-top: 10px;
+    padding: 0; 
+    margin: 10px 0;
     color: #333; /* 제목 색상 */
   }
 
@@ -399,6 +400,13 @@ const Wrapper = styled.div`
   .content3 ul {
     list-style-type: disc; /* 글머리 기호 스타일 */
     padding-left: 20px; /* 왼쪽 여백 */
+    margin-bottom: 20px;
+  }
+
+  .content1 p,
+  .content2 p,
+  .content3 p {
+    margin: 0 0 20px;
   }
 `;
 

@@ -37,17 +37,19 @@ const InfoContent = styled.div`
   flex-direction: column;
   margin-top: 10px;
   font-size: 1.2rem;
+  padding: 10px; 
 
   .info-row {
     display: flex;
-    justify-content: space-between;
+    /*justify-content: space-between; */
     margin-bottom: 30px;
   }
 
   .info-group {
     display: flex;
     flex-direction: column;
-
+    width: 0;
+    flex-grow: 1;
     div {
       &:first-child {
         font-weight: bold; /* 제목을 두껍게 */
@@ -109,7 +111,7 @@ const InfoAbout = () => {
               저는 비전공지만 소프트웨어 개발에 깊은 흥미를 느껴 풀스택
               개발자라는 진로를 가지게 되었습니다. 개발자의 코드 한 줄로 웹에서
               다양한 기능을 창조한다는 점이 제게 큰 매력으로 다가왔습니다. 비록
-              제 학문적 배경 정치외교학으로 컴퓨터 및 개발 분야와 거리가 있지만,
+              제 학문적 배경은 정치외교학으로 컴퓨터 및 개발 분야와 거리가 있지만,
               저는 프로그래밍의 무한한 발전 가능성과 창조성에 깊이 매료되어
               있습니다. 이러한 열정은 단순한 호기심을 넘어, 새로운 기술을 배우고
               활용하고자 하는 강한 욕구로 이어졌습니다.
