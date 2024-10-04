@@ -1,6 +1,5 @@
 import React, { useState, useCallback } from 'react';
 import { Section } from 'react-fullpage';
-import Image from 'next/image';
 import styled from 'styled-components';
 import classNames from 'classnames';
 import { HiCursorClick } from 'react-icons/hi';
@@ -29,12 +28,17 @@ import { DiAptana } from 'react-icons/di';
 const Tab1Content = () => {
   return (
     <>
-      <Image
-        src="/images/profile.png"
-        width={250}
-        height={250}
-        alt="포트폴리오 이미지"
-      />
+      <div className="video">
+        <iframe
+          width="1050"
+          height="550"
+          src="https://www.youtube.com/embed/hXwrj8Rhu60"
+          title="Tab3Content"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+      </div>
       <div className="content1">
         <h3>1. 개발배경 및 목적</h3>
         <p>
@@ -101,12 +105,17 @@ const Tab1Content = () => {
 const Tab2Content = () => {
   return (
     <>
-      <Image
-        src="/images/profile.png"
-        width={250}
-        height={250}
-        alt="포트폴리오 이미지"
-      />
+      <div className="video">
+        <iframe
+          width="1050"
+          height="550"
+          src="https://www.youtube.com/embed/nB4fG4DARG4"
+          title="Tab3Content"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+      </div>
       <div className="content2">
         <h3>1. 개발배경 및 목적</h3>
         <p>
@@ -187,10 +196,17 @@ const Tab2Content = () => {
 const Tab3Content = () => {
   return (
     <>
-      <video width={1000} height={600} controls>
-        <source src="/videos/tab3.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+      <div className="video">
+        <iframe
+          width="1050"
+          height="550"
+          src="https://www.youtube.com/embed/47nQ1yoZNvw"
+          title="Tab3Content"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+      </div>
       <div className="content3">
         <h3>1. 개발배경 및 목적</h3>
         <p>
@@ -242,10 +258,10 @@ const Tab3Content = () => {
         <ul>
           <li>
             상담 예약 시스템: 학생들이 원하는 시간에 상담을 예약할 수 있으며,
-            가용한 상담사가 자동 배정됩니다. 
-            단, 집단상담의 경우 정해진 상담 프로그램 일정에 따라 예약이 진행됩니다. 예) a프로그램 10/08 화 오후
-            2:30 진행. 이 경우 a프로그램 신청을 원하는 학생은 10/08 화 오후
-            2:30 일정을 따라야 합니다.
+            가용한 상담사가 자동 배정됩니다. 단, 집단상담의 경우 정해진 상담
+            프로그램 일정에 따라 예약이 진행됩니다. 예) a프로그램 10/08 화 오후
+            2:30 진행. 이 경우 a프로그램 신청을 원하는 학생은 10/08 화 오후 2:30
+            일정을 따라야 합니다.
           </li>
           <li>
             상담 기록 관리: 상담사는 상담 내용을 기록하고, 학생의 상담 이력을
@@ -294,7 +310,7 @@ const items = {
   tab2: {
     title: (
       <>
-        <div style={{ marginBottom: '10px' }}>
+        <div style={{ marginBottom: '5px' }}>
           <HiCursorClick style={{ fontSize: '1.2rem' }} />{' '}
           <a
             href="https://github.com/Class502GroupStudy4/G9Project4"
@@ -389,7 +405,7 @@ const Wrapper = styled.div`
   .content1 h3,
   .content2 h3,
   .content3 h3 {
-    padding: 0; 
+    padding: 0;
     margin: 10px 0;
     color: #333; /* 제목 색상 */
   }
@@ -407,6 +423,10 @@ const Wrapper = styled.div`
   .content2 p,
   .content3 p {
     margin: 0 0 20px;
+  }
+
+  .video {
+    margin-top: 10px;
   }
 `;
 

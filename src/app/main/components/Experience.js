@@ -2,10 +2,27 @@ import React from 'react';
 import { Section } from 'react-fullpage';
 import styled from 'styled-components';
 import Item from './Item';
-import { SiApachetomcat, SiThymeleaf, SiSpring, SiSpringboot, SiSpringsecurity, SiPython, SiJavascript, SiReact, SiHtml5, SiCss3, SiGradle, SiGit, SiJenkins, SiDocker, SiOracle, SiDbeaver } from 'react-icons/si';
-import { GrJava } from "react-icons/gr";
-import { FaAws } from "react-icons/fa";
-import { TbBrandReactNative, TbBrandNextjs } from "react-icons/tb";
+import {
+  SiApachetomcat,
+  SiThymeleaf,
+  SiSpring,
+  SiSpringboot,
+  SiSpringsecurity,
+  SiPython,
+  SiJavascript,
+  SiReact,
+  SiHtml5,
+  SiCss3,
+  SiGradle,
+  SiGit,
+  SiJenkins,
+  SiDocker,
+  SiOracle,
+  SiDbeaver,
+} from 'react-icons/si';
+import { GrJava } from 'react-icons/gr';
+import { FaAws, FaNodeJs } from 'react-icons/fa';
+import { TbBrandReactNative, TbBrandNextjs } from 'react-icons/tb';
 
 const Wrapper = styled.div`
   &.first {
@@ -132,15 +149,18 @@ const Experience = () => {
         <Item title="CERTIFICATE & AWARDS">
           <CertificateContent>
             <div className="entry">
-              <span className="date">2024.09.20</span><br />
+              <span className="date">2024.09.20</span>
+              <br />
               SQL 개발자 (SQLD)
             </div>
             <div className="entry">
-              <span className="date">2020.01.31</span><br />
+              <span className="date">2020.01.31</span>
+              <br />
               컴퓨터활용능력 2급
             </div>
             <div className="entry">
-              <span className="date">2019.12.20</span><br />
+              <span className="date">2019.12.20</span>
+              <br />
               2019 부천시 대학생 세계탐방 프로젝트 최우수상 (1등상)
             </div>
           </CertificateContent>
@@ -169,6 +189,9 @@ const Experience = () => {
               </div>
               <div>
                 <SiPython /> Python
+              </div>
+              <div>
+                <FaNodeJs /> Node.js
               </div>
             </div>
             <div style={{ margin: '20px 0' }} />
