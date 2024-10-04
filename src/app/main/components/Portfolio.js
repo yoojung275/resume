@@ -21,7 +21,7 @@ import {
   SiIntellijidea,
 } from 'react-icons/si';
 import { GrJava } from 'react-icons/gr';
-import { FaAws } from 'react-icons/fa';
+import { FaAws, FaLink } from 'react-icons/fa';
 import { TbBrandNextjs } from 'react-icons/tb';
 import { DiAptana } from 'react-icons/di';
 
@@ -105,6 +105,17 @@ const Tab1Content = () => {
 const Tab2Content = () => {
   return (
     <>
+    <div className='severLink'>
+    <FaLink />{' '}
+        <a
+          href="http://maratanghuru.xyz/"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ fontSize: '1.2rem' }}
+        >
+          여행어때 바로가기
+        </a>
+    </div>
       <div className="video">
         <iframe
           width="1050"
@@ -196,6 +207,17 @@ const Tab2Content = () => {
 const Tab3Content = () => {
   return (
     <>
+    <div className='severLink'>
+    <FaLink />{' '}
+        <a
+          href="http://thxforservice.xyz/"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ fontSize: '1.2rem' }}
+        >
+          상담관리 사이트 바로가기
+        </a>
+    </div>
       <div className="video">
         <iframe
           width="1050"
@@ -426,7 +448,7 @@ const Wrapper = styled.div`
   }
 
   .video {
-    margin-top: 10px;
+    margin-top: 20px;
     position: relative;
     width: 100%; /* 부모 요소에 따라 너비 조정 */
     padding-bottom: 56.25%; /* 16:9 비율 (9 / 16 * 100) */
@@ -441,6 +463,12 @@ const Wrapper = styled.div`
     width: 100%;
     height: 100%;
   }
+
+  .severLink {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    font-weight: bold;
+  } 
 `;
 
 const Portfolio = () => {
