@@ -427,6 +427,19 @@ const Wrapper = styled.div`
 
   .video {
     margin-top: 10px;
+    position: relative;
+    width: 100%; /* 부모 요소에 따라 너비 조정 */
+    padding-bottom: 56.25%; /* 16:9 비율 (9 / 16 * 100) */
+    height: 0; /* 초기 높이 설정 */
+    overflow: hidden; /* 넘치는 내용 숨기기 */
+  }
+
+  .video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 `;
 
