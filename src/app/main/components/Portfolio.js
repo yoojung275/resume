@@ -318,7 +318,7 @@ const items = {
       <>
         <HiCursorClick style={{ fontSize: '1.2rem' }} />{' '}
         <a
-          href="https://github.com/Class502GroupStudy4/pokemonProject"
+          href="https://github.com/yoojung275/project_502_3_Pokemon"
           target="_blank"
           rel="noopener noreferrer"
           style={{ fontSize: '1.2rem' }}
